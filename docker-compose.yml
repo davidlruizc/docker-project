@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  express: 
+    image: node:12
+    working_dir: /app
+    volumes: 
+      - ./:/app
+    ports: 
+      - 3000:8000
+    command: sh -c "npm install && npm run dev"
+  

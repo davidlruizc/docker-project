@@ -1,1 +1,2 @@
-# docker-project
+# Projecto ejemplo usando docker-compose
+

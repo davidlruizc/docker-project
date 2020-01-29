@@ -1,0 +1,5 @@
+#!/bin/sh     
+cd /home/docker-project/
+git pull      
+npm install --production
+npm run start

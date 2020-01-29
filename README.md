@@ -1,4 +1,4 @@
-# Projecto ejemplo usando docker-compose
+# Proyecto ejemplo usando docker-compose
 
 Este proyecto contiene lo basico para poder ejecutar una solución con `docker-compose`.
 como API REST. 

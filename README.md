@@ -18,3 +18,7 @@ services:
       - 3000:8000 # host : contenedor
     command: sh -c "npm install && npm run dev"
 ```
+
+## Unit test
+
+Para realizar pruebas unitarias, este proyecto tiene configurado `Jest` con `supertest` para poder realizar pruebas a enpoints de ` API REST `.

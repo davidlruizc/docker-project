@@ -6,6 +6,6 @@ it('Test Get method endpoint', async (done) => {
   const response = await request.get('/')
 
   expect(response.status).toBe(200)
-  expect(response.body.res).toBe('Hello World :V!')
+  expect(response.body.res).toBe('Hello World :v!')
   done()
 })

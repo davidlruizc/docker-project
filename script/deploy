@@ -1,6 +1,6 @@
 #!/bin/sh
 cd /home/docker-project/
 git pull      
-sudo npm install
+npm install
 pm2 restart all
 exit

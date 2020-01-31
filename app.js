@@ -4,7 +4,7 @@ const app = express();
 app.get('/', function (req, res) {
   res
     .status(200)
-    .json({res: 'Hello World :v!'});
+    .json({res: 'Hello Jenkins :v!'});
 });
 
 module.exports = app

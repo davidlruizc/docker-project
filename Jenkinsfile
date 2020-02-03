@@ -9,6 +9,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'node --version'
+        sh 'ls -l /usr/src/app'
       }
     }
   }

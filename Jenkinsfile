@@ -13,8 +13,8 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'ls -lac'
-        sh 'pwd'
+        sh 'sudo chown -R 997:993 "/.npm"'
+        sh 'npm install'
       }
     }
   }

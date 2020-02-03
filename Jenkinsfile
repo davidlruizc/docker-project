@@ -5,6 +5,9 @@ pipeline {
       args '-p 8000:8000'
     }
   }
+  environment {
+    HOME = '.'
+  }
   stages {
     stage('Clonning Git') {
       steps {

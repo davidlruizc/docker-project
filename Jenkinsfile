@@ -1,15 +1,19 @@
 pipeline {
-  agent { dockerfile true }
+  agent {
+    docker {
+      image 'node:10'
+      args '-p 8000:8000'
+    }
+  }
   stages {
     stage('Clonning Git') {
       steps {
         git 'https://github.com/davidlruizc/docker-project'
       }
     }
-    stage('Test') {
+    stage('Build') {
       steps {
-        sh 'node --version'
-        sh 'ls -l /usr/src/app'
+        sh 'npm install'
       }
     }
   }
